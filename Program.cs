@@ -4,22 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace character
+namespace Character
 {
     class Program
     {
-
-        public static void Main()
+        static void Main(string[] args)
         {
-            char b = 'M';
-            Console.WriteLine(" value " + b);
-            Console.WriteLine("enter value ");
-            b = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine("value = " + b);
+            char ch;
+            Console.WriteLine("enter character");
+            ch = Convert.ToChar(Console.Read());
+            Console.WriteLine("ch = " + ch);
 
-
-
-            Console.ReadLine();
         }
     }
 }
