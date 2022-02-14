@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace character
+namespace ConsoleApp1
 {
-    class Program
+    class Class1
     {
 
         public static void Main()
         {
-            char b = 'M';
+            Boolean b = true;
             Console.WriteLine(" value " + b);
             Console.WriteLine("enter value ");
-            b = Convert.ToChar(Console.ReadLine());
+            b = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("value = " + b);
 
 
