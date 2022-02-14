@@ -4,22 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Enum
 {
-    class Class1
+    class Program
     {
-
+        enum grade { dist = 90, first = 60, second = 40 }
         public static void Main()
         {
-            double b = 123456.1234567890123; //signed
-            Console.WriteLine(" value " + b);
-            Console.WriteLine("enter value ");
-            b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("value = " + b);
+            //write a program to accept character from the user 
+            grade gr;
 
+            gr = grade.first;
+            Console.WriteLine("grade  = " + gr);
+            Console.WriteLine("grade value = " + Convert.ToInt32(gr));
 
-
-            Console.ReadLine();
         }
     }
 }
