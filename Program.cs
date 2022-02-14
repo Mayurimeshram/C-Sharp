@@ -4,21 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp1
 {
-    class Program
+    class Class1
     {
-        static void Main(string[] args)
-        {
-            
-            int i = 1;
-            do
-            {
-                Console.Write("i = " + i);
-                i++;
-            } while (i <= 10);
-            Console.ReadLine();
 
+        public static void Main()
+        {
+            double b = 123456.1234567890123; //signed
+            Console.WriteLine(" value " + b);
+            Console.WriteLine("enter value ");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("value = " + b);
+
+
+
+            Console.ReadLine();
         }
     }
 }
