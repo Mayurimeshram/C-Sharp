@@ -4,23 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Example
 
+namespace ConsoleApp2
 {
     class Program
     {
-
-        public static void Main()
+        static void Main(string[] args)
         {
-            long longValue = 1234567L;
-            int intValue = (int)longValue;
-            Console.WriteLine("(int) {0} = {1}", longValue, intValue);
+            
+            int i, j;
+            for (i = 1; i < 10; i++)
+            {
+                for (j = 1; j < 10; j++)
+                {
+                    Console.Write(j + "\t");
+                }
+                Console.WriteLine();
 
+            }
             Console.ReadLine();
 
-
         }
-
-
     }
 }
