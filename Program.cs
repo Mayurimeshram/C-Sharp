@@ -4,26 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace ConsoleApp2
+namespace 
 {
     class Program
     {
-        static void Main(string[] args)
+
+        public static void Main()
         {
-            
-            int i, j;
-            for (i = 1; i < 10; i++)
-            {
-                for (j = 1; j < 10; j++)
-                {
-                    Console.Write(j + "\t");
-                }
-                Console.WriteLine();
-
-            }
+            string b = "mayuri";
+            Console.WriteLine("value" + b);
+            Console.WriteLine("enter value");
+            b = Console.ReadLine();
+            Console.WriteLine("value =" + b);
             Console.ReadLine();
-
         }
     }
 }
