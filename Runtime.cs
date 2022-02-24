@@ -1,28 +1,40 @@
 ﻿using System;
-public class Animal
+public class shape
 {
-    public virtual void eat()
+    public virtual void Draw()
     {
-        Console.WriteLine("eating.....");
+        Console.WriteLine("drawing..");
+    }
+}
+ public class rectangle:shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("drawing rectangle.....");
+    }
 
-    }
 }
-  public  class Dog: Animal
+  public class circle: shape
 {
-    public override void eat()
+    public override void Draw()
     {
-        Console.WriteLine("eating bread...");
+        Console.WriteLine("drawing circle....");
     }
 }
-public class Testploymorphism
+   public class Testpolymorphism
 {
     public static void Main()
     {
-        Animal a = new Dog();
-        a.eat();
+        shape s;
+        s = new shape();
+        s.Draw();
+        s = new rectangle();
+        s.Draw();
+        s = new circle();
+        s.Draw();
+
+
+
+
     }
-
-    
 }
-
-
