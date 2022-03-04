@@ -1,32 +1,31 @@
 ﻿using System;
 public interface Drawable
 {
-    void Draw();
+    void draw();
 }
- public class Rectangle: Drawable
+public class Rectangle : Drawable
 {
-    public void Draw()
+    public void draw()
     {
-        Console.WriteLine("Drawing Reactangle.....");
+        Console.WriteLine("drawing rectangle...");
     }
 }
- public class Circle: Drawable
-
+public class Circle : Drawable
 {
-    public void Draw()
+    public void draw()
     {
-        Console.WriteLine("Drawing circle....");
+        Console.WriteLine("drawing circle...");
     }
 }
- public class TestInterface
+public class TestInterface
 {
     public static void Main()
     {
         Drawable d;
         d = new Rectangle();
-        d.Draw();
+        d.draw();
         d = new Circle();
-        d.Draw();
-
+        d.draw();
     }
 }
+
