@@ -6,32 +6,30 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    interface Bank
+    interface bank
     {
-        string Deposit(int Actno, int Amt);
-        }
-    class Saving : Bank
+        String deposit(int actno, int amt);
+    }
+    class saving : bank
     {
-        int Actno;
-        int Bal = 2000;
-        public string Deposit(int Actno, int Amt)
+        int actno;
+        int bal = 1000;
+        public String deposit(int actno, int amt)
         {
-            this.Actno = Actno; ;
-            Bal = Bal + Amt;
-            return "deposited successfully successfully ,Bal is " + Bal;
+            this.actno = actno;
+            bal = bal + amt;
+            return "deposited successfully successfully ,bal is " + bal;
         }
     }
-
     class Program
     {
         static void Main(string[] args)
         {
-            Bank b;
-            b = new Saving();
-            String str = b.Deposit(1, 200);
+            bank b;
+            b = new saving();
+            String str = b.deposit(1, 200);
             Console.WriteLine(str);
-
         }
     }
-
 }
+
